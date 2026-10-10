@@ -1,0 +1,214 @@
+<html>
+<head>
+<title>TestNG:  Edge_Smoke</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Edge_Smoke</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>8/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Oct 09 21:19:13 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>106 seconds (106760 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>smoke </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Checkout_module_Test.Checkout_Smoke_Negative.checkoutMustRejectEmptyInformation()'><b>checkoutMustRejectEmptyInformation</b><br>Test class: Checkout_module_Test.Checkout_Smoke_Negative<br/>
+<a href="#Output-370356001" onClick='toggleBox("Output-370356001", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-370356001" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-370356001">
+Login successful<br/>
+Your Cart<br/>
+Cart page is opened<br/>
+Checkout: Your Information<br/>
+Checkout title is displayed<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>Checkout_module_Test.Checkout_Smoke_Negative@4f67eb2a</td></tr>
+<tr>
+<td title='Login_module.login_logout.login_logoutTest()'><b>login_logoutTest</b><br>Test class: Login_module.login_logout<br/>
+<a href="#Output-1349872758" onClick='toggleBox("Output-1349872758", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1349872758" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1349872758">
+Login successful<br/>
+Logging out<br/>
+Logout successful<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>Login_module.login_logout@343570b7</td></tr>
+<tr>
+<td title='cart_module_Test.Cart_Smoke.cartSmokeTest()'><b>cartSmokeTest</b><br>Test class: cart_module_Test.Cart_Smoke<br/>
+<a href="#Output-1015545330" onClick='toggleBox("Output-1015545330", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1015545330" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1015545330">
+Login successful<br/>
+Your Cart<br/>
+Cart page is opened<br/>
+Products are present in cart<br/>
+Number of products in cart: 1<br/>
+Logging out<br/>
+Logout successful<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>cart_module_Test.Cart_Smoke@55f616cf</td></tr>
+<tr>
+<td title='HomePage_module.Home_Smoke.verifyHomePageLoads()'><b>verifyHomePageLoads</b><br>Test class: HomePage_module.Home_Smoke<br/>
+<a href="#Output-65894433" onClick='toggleBox("Output-65894433", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-65894433" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-65894433">
+Login successful<br/>
+HomePage Title:Products<br/>
+Home Page is displayed<br/>
+Products are visible<br/>
+Logging out<br/>
+Logout successful<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>HomePage_module.Home_Smoke@5f16132a</td></tr>
+<tr>
+<td title='Checkout_module_Test.Checkout_smoke.basicTest()'><b>basicTest</b><br>Test class: Checkout_module_Test.Checkout_smoke<br/>
+<a href="#Output-45320991" onClick='toggleBox("Output-45320991", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-45320991" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-45320991">
+Login successful<br/>
+HomePage Title:Products<br/>
+Home Page is displayed<br/>
+Your Cart<br/>
+Cart page is opened<br/>
+Sauce Labs Bike Light<br/>
+Checkout: Your Information<br/>
+Checkout title is displayed<br/>
+Payment Information:
+SauceCard #31337
+Shipping Information:
+Free Pony Express Delivery!
+Price Total
+Item total: $9.99
+Tax: $0.80
+Total: $10.79
+Cancel
+Finish<br/>
+Order Completed page is displayed<br/>
+Thank you for your order!
+Your order has been dispatched, and will arrive just as fast as the pony can get there!
+Back Home
+Generate PDF order<br/>
+HomePage is displayed<br/>
+Logging out<br/>
+Logout successful<br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>Checkout_module_Test.Checkout_smoke@1fb700ee</td></tr>
+<tr>
+<td title='HomePage_module.Home_Smoke_Negative.verifyInventoryRequiresLogin()'><b>verifyInventoryRequiresLogin</b><br>Test class: HomePage_module.Home_Smoke_Negative</td>
+<td></td>
+<td>0</td>
+<td>HomePage_module.Home_Smoke_Negative@69fb6037</td></tr>
+<tr>
+<td title='cart_module_Test.Cart_Smoke_Negative.verifyCartWithoutLogin()'><b>verifyCartWithoutLogin</b><br>Test class: cart_module_Test.Cart_Smoke_Negative<br/>
+<a href="#Output-120157876" onClick='toggleBox("Output-120157876", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-120157876" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-120157876">
+Cart is not accessible without login<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>cart_module_Test.Cart_Smoke_Negative@1356d4d4</td></tr>
+<tr>
+<td title='DynamicCatalog_module_Test.DynamicCatalog_Smoke_Negative.spinnerDuplicateProductsTest()'><b>spinnerDuplicateProductsTest</b><br>Test class: DynamicCatalog_module_Test.DynamicCatalog_Smoke_Negative<br/>
+<a href="#Output-575779772" onClick='toggleBox("Output-575779772", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-575779772" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-575779772">
+Login successful<br/>
+Dynamic Catalog is opened<br/>
+Spinner is opened<br/>
+Spinner page does not display excess product cards<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>DynamicCatalog_module_Test.DynamicCatalog_Smoke_Negative@6c779568</td></tr>
+</table><p>
+</body>
+</html>

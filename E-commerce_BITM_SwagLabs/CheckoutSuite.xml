@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="ecomSwagLabsCheckout.Checkout_smoke"/>
+      <class name="ecomSwagLabsCheckout.Checkout_Functional"/>
+      <class name="ecomSwagLabsCheckout.Checkout_Integration_Negative"/>
+      <class name="ecomSwagLabsCheckout.Checkout_Integration"/>
+      <class name="ecomSwagLabsCheckout.Checkout_Smoke_Negative"/>
+      <class name="ecomSwagLabsCheckout.Checkout_System"/>
+      <class name="ecomSwagLabsCheckout.Checkout_Functional_Negative"/>
+      <class name="ecomSwagLabsCheckout.Checkout_System_Negative"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

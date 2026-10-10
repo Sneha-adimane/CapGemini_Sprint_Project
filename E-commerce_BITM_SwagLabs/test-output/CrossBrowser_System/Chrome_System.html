@@ -1,0 +1,293 @@
+<html>
+<head>
+<title>TestNG:  Chrome_System</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Chrome_System</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>12/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Oct 09 21:43:35 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>223 seconds (223008 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>system </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Checkout_module_Test.Checkout_System.OrderProductTest()'><b>OrderProductTest</b><br>Test class: Checkout_module_Test.Checkout_System<br/>
+<a href="#Output-648972298" onClick='toggleBox("Output-648972298", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-648972298" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-648972298">
+Login successful<br/>
+HomePage Title:Products<br/>
+Home Page is displayed<br/>
+Your Cart<br/>
+Cart page is opened<br/>
+Sauce Labs Bike Light<br/>
+Checkout: Your Information<br/>
+Checkout title is displayed<br/>
+Payment Information:
+SauceCard #31337
+Shipping Information:
+Free Pony Express Delivery!
+Price Total
+Item total: $9.99
+Tax: $0.80
+Total: $10.79
+Cancel
+Finish<br/>
+Order Completed page is displayed<br/>
+Thank you for your order!
+Your order has been dispatched, and will arrive just as fast as the pony can get there!
+Back Home
+Generate PDF order<br/>
+HomePage is displayed<br/>
+HomePage Title:Products<br/>
+Home Page is displayed<br/>
+Logging out<br/>
+Logout successful<br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>Checkout_module_Test.Checkout_System@6a2f6f80</td></tr>
+<tr>
+<td title='DynamicCatalog_module_Test.DynamicCatalog_System_Negative.catalogAccessAfterLogoutTest()'><b>catalogAccessAfterLogoutTest</b><br>Test class: DynamicCatalog_module_Test.DynamicCatalog_System_Negative<br/>
+<a href="#Output-1069131391" onClick='toggleBox("Output-1069131391", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1069131391" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1069131391">
+Login successful<br/>
+Logging out<br/>
+Logout successful<br/>
+Catalog is not accessible after logout<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>DynamicCatalog_module_Test.DynamicCatalog_System_Negative@7ee8290b</td></tr>
+<tr>
+<td title='HomePage_module.Home_System.verifyCompleteHomeFlow()'><b>verifyCompleteHomeFlow</b><br>Test class: HomePage_module.Home_System<br/>
+<a href="#Output-235151116" onClick='toggleBox("Output-235151116", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-235151116" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-235151116">
+Login successful<br/>
+HomePage Title:Products<br/>
+Home Page is displayed<br/>
+Products are visible<br/>
+Products are added to cart<br/>
+All Products are added to cart<br/>
+Your Cart<br/>
+Cart page is opened<br/>
+Logging out<br/>
+Logout successful<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>HomePage_module.Home_System@3c3d9b6b</td></tr>
+<tr>
+<td title='DynamicCatalog_module_Test.DynamicCatalog_System.completeDynamicCatalogFlow()'><b>completeDynamicCatalogFlow</b><br>Test class: DynamicCatalog_module_Test.DynamicCatalog_System<br/>
+<a href="#Output-81355344" onClick='toggleBox("Output-81355344", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-81355344" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-81355344">
+Login successful<br/>
+Dynamic Catalog is opened<br/>
+Lazy Load is opened<br/>
+Dynamic Catalog is opened<br/>
+Spinner is opened<br/>
+Dynamic Catalog is opened<br/>
+Slider is opened<br/>
+HomePage Title:Products<br/>
+Home Page is displayed<br/>
+Logging out<br/>
+Logout successful<br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>DynamicCatalog_module_Test.DynamicCatalog_System@f79e</td></tr>
+<tr>
+<td title='cart_module_Test.Cart_System_Negative.removedProductAfterRefreshTest()'><b>removedProductAfterRefreshTest</b><br>Test class: cart_module_Test.Cart_System_Negative<br/>
+<a href="#Output-646757254" onClick='toggleBox("Output-646757254", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-646757254" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-646757254">
+Login successful<br/>
+Your Cart<br/>
+Cart page is opened<br/>
+Removed product did not reappear after refresh<br/>
+</div>
+</td>
+<td></td>
+<td>28</td>
+<td>cart_module_Test.Cart_System_Negative@4961f6af</td></tr>
+<tr>
+<td title='cart_module_Test.Cart_System.completeCartFlow()'><b>completeCartFlow</b><br>Test class: cart_module_Test.Cart_System<br/>
+<a href="#Output-1300132917" onClick='toggleBox("Output-1300132917", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1300132917" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1300132917">
+Login successful<br/>
+Your Cart<br/>
+Cart page is opened<br/>
+Products are present in cart<br/>
+Number of products in cart: 1<br/>
+Product is removed from cart<br/>
+HomePage Title:Products<br/>
+Home Page is displayed<br/>
+Logging out<br/>
+Logout successful<br/>
+</div>
+</td>
+<td></td>
+<td>24</td>
+<td>cart_module_Test.Cart_System@394df057</td></tr>
+<tr>
+<td title='Login_module.login_logout.login_logoutTest()'><b>login_logoutTest</b><br>Test class: Login_module.login_logout<br/>
+<a href="#Output-1690050988" onClick='toggleBox("Output-1690050988", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1690050988" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1690050988">
+Login successful<br/>
+Logging out<br/>
+Logout successful<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>Login_module.login_logout@587e5365</td></tr>
+<tr>
+<td title='HomePage_module.Home_System_Negative.verifyHomeWithoutLogin()'><b>verifyHomeWithoutLogin</b><br>Test class: HomePage_module.Home_System_Negative</td>
+<td></td>
+<td>0</td>
+<td>HomePage_module.Home_System_Negative@79d8407f</td></tr>
+<tr>
+<td title='Checkout_module_Test.Checkout_System_Negative.incompleteOrderMustNotComplete()'><b>incompleteOrderMustNotComplete</b><br>Test class: Checkout_module_Test.Checkout_System_Negative<br/>
+<a href="#Output-1138779634" onClick='toggleBox("Output-1138779634", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1138779634" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1138779634">
+Login successful<br/>
+Your Cart<br/>
+Cart page is opened<br/>
+Checkout: Your Information<br/>
+Checkout title is displayed<br/>
+Checkout rejected empty customer information<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>Checkout_module_Test.Checkout_System_Negative@45b4c3a9</td></tr>
+<tr>
+<td title='cart_module_Test.Cart_System_Negative.cartAccessAfterLogoutTest()'><b>cartAccessAfterLogoutTest</b><br>Test class: cart_module_Test.Cart_System_Negative<br/>
+<a href="#Output-445010547" onClick='toggleBox("Output-445010547", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-445010547" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-445010547">
+Login successful<br/>
+Logging out<br/>
+Logout successful<br/>
+Cart access blocked after logout<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>cart_module_Test.Cart_System_Negative@4961f6af</td></tr>
+<tr>
+<td title='DynamicCatalog_module_Test.DynamicCatalog_System_Negative.repeatedScrollStabilityTest()'><b>repeatedScrollStabilityTest</b><br>Test class: DynamicCatalog_module_Test.DynamicCatalog_System_Negative<br/>
+<a href="#Output-118566118" onClick='toggleBox("Output-118566118", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-118566118" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-118566118">
+Login successful<br/>
+Dynamic Catalog is opened<br/>
+Lazy Load is opened<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>DynamicCatalog_module_Test.DynamicCatalog_System_Negative@7ee8290b</td></tr>
+<tr>
+<td title='HomePage_module.Home_System_Negative.verifyHomeAfterLogout()'><b>verifyHomeAfterLogout</b><br>Test class: HomePage_module.Home_System_Negative<br/>
+<a href="#Output-2049646260" onClick='toggleBox("Output-2049646260", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2049646260" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2049646260">
+Login successful<br/>
+Logging out<br/>
+Logout successful<br/>
+Verify that Inventory page is not accessible after logout<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>HomePage_module.Home_System_Negative@79d8407f</td></tr>
+</table><p>
+</body>
+</html>

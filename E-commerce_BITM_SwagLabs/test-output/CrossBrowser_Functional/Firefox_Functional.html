@@ -1,0 +1,883 @@
+<html>
+<head>
+<title>TestNG:  Firefox_Functional</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Firefox_Functional</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>36/3/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Oct 10 10:54:27 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>518 seconds (518149 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>functional </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Checkout_module_Test.Checkout_Functional_Negative.emptyLastNameTest()'><b>emptyLastNameTest</b><br>Test class: Checkout_module_Test.Checkout_Functional_Negative<br>Parameters: dhfj, , 78768<br/>
+<a href="#Output-952240626" onClick='toggleBox("Output-952240626", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-952240626" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-952240626">
+Login successful<br/>
+Your Cart<br/>
+Cart page is opened<br/>
+Checkout: Your Information<br/>
+Checkout title is displayed<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain &quot;checkout-step-two.html&quot;. Current url: &quot;https://www.saucedemo.com/checkout-step-one.html&quot;
+(tried for 10 seconds with 500 milliseconds interval)
+Build info: version: &apos;4.46.0&apos;, revision: &apos;df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.12&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 157.0, moz:accessibilityChecks: false, moz:buildID: 20260924084938, moz:geckodriverVersion: 0.37.1, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 29600, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 2d666d4a-66cb-421e-911c-1a1000da7f8b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at genric_utilities.ExplicitWaitUtility.waitForUrl(ExplicitWaitUtility.java:58)
+	at Pom_utilities.checkoutPage.getContinuebtn(checkoutPage.java:56)
+	at Checkout_module_Test.Checkout_Functional_Negative.emptyLastNameTest(Checkout_Functional_Negative.java:79)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace952240626", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace952240626'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain &quot;checkout-step-two.html&quot;. Current url: &quot;https://www.saucedemo.com/checkout-step-one.html&quot;
+(tried for 10 seconds with 500 milliseconds interval)
+Build info: version: &apos;4.46.0&apos;, revision: &apos;df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.12&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 157.0, moz:accessibilityChecks: false, moz:buildID: 20260924084938, moz:geckodriverVersion: 0.37.1, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 29600, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 2d666d4a-66cb-421e-911c-1a1000da7f8b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at genric_utilities.ExplicitWaitUtility.waitForUrl(ExplicitWaitUtility.java:58)
+	at Pom_utilities.checkoutPage.getContinuebtn(checkoutPage.java:56)
+	at Checkout_module_Test.Checkout_Functional_Negative.emptyLastNameTest(Checkout_Functional_Negative.java:79)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>13</td>
+<td>Checkout_module_Test.Checkout_Functional_Negative@3315d2d7</td></tr>
+<tr>
+<td title='Checkout_module_Test.Checkout_Functional_Negative.emptyFirstNameTest()'><b>emptyFirstNameTest</b><br>Test class: Checkout_module_Test.Checkout_Functional_Negative<br>Parameters: , vjhg, 768768<br/>
+<a href="#Output-1378626073" onClick='toggleBox("Output-1378626073", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1378626073" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1378626073">
+Login successful<br/>
+Your Cart<br/>
+Cart page is opened<br/>
+Checkout: Your Information<br/>
+Checkout title is displayed<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain &quot;checkout-step-two.html&quot;. Current url: &quot;https://www.saucedemo.com/checkout-step-one.html&quot;
+(tried for 10 seconds with 500 milliseconds interval)
+Build info: version: &apos;4.46.0&apos;, revision: &apos;df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.12&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 157.0, moz:accessibilityChecks: false, moz:buildID: 20260924084938, moz:geckodriverVersion: 0.37.1, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 70320, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 96412152-8aa7-4e05-b5d1-84bc94aecf35
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at genric_utilities.ExplicitWaitUtility.waitForUrl(ExplicitWaitUtility.java:58)
+	at Pom_utilities.checkoutPage.getContinuebtn(checkoutPage.java:56)
+	at Checkout_module_Test.Checkout_Functional_Negative.emptyFirstNameTest(Checkout_Functional_Negative.java:56)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1378626073", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1378626073'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain &quot;checkout-step-two.html&quot;. Current url: &quot;https://www.saucedemo.com/checkout-step-one.html&quot;
+(tried for 10 seconds with 500 milliseconds interval)
+Build info: version: &apos;4.46.0&apos;, revision: &apos;df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.12&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 157.0, moz:accessibilityChecks: false, moz:buildID: 20260924084938, moz:geckodriverVersion: 0.37.1, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 70320, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 96412152-8aa7-4e05-b5d1-84bc94aecf35
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at genric_utilities.ExplicitWaitUtility.waitForUrl(ExplicitWaitUtility.java:58)
+	at Pom_utilities.checkoutPage.getContinuebtn(checkoutPage.java:56)
+	at Checkout_module_Test.Checkout_Functional_Negative.emptyFirstNameTest(Checkout_Functional_Negative.java:56)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>13</td>
+<td>Checkout_module_Test.Checkout_Functional_Negative@3315d2d7</td></tr>
+<tr>
+<td title='Checkout_module_Test.Checkout_Functional_Negative.emptyAllFieldsTest()'><b>emptyAllFieldsTest</b><br>Test class: Checkout_module_Test.Checkout_Functional_Negative<br>Parameters: , , <br/>
+<a href="#Output-1448120606" onClick='toggleBox("Output-1448120606", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1448120606" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1448120606">
+Login successful<br/>
+Your Cart<br/>
+Cart page is opened<br/>
+Checkout: Your Information<br/>
+Checkout title is displayed<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain &quot;checkout-step-two.html&quot;. Current url: &quot;https://www.saucedemo.com/checkout-step-one.html&quot;
+(tried for 10 seconds with 500 milliseconds interval)
+Build info: version: &apos;4.46.0&apos;, revision: &apos;df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.12&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 157.0, moz:accessibilityChecks: false, moz:buildID: 20260924084938, moz:geckodriverVersion: 0.37.1, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 48028, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: e870d3f6-a663-4014-8e89-6bcadd47966c
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at genric_utilities.ExplicitWaitUtility.waitForUrl(ExplicitWaitUtility.java:58)
+	at Pom_utilities.checkoutPage.getContinuebtn(checkoutPage.java:56)
+	at Checkout_module_Test.Checkout_Functional_Negative.emptyAllFieldsTest(Checkout_Functional_Negative.java:31)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1448120606", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1448120606'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain &quot;checkout-step-two.html&quot;. Current url: &quot;https://www.saucedemo.com/checkout-step-one.html&quot;
+(tried for 10 seconds with 500 milliseconds interval)
+Build info: version: &apos;4.46.0&apos;, revision: &apos;df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.12&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 157.0, moz:accessibilityChecks: false, moz:buildID: 20260924084938, moz:geckodriverVersion: 0.37.1, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 48028, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: e870d3f6-a663-4014-8e89-6bcadd47966c
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at genric_utilities.ExplicitWaitUtility.waitForUrl(ExplicitWaitUtility.java:58)
+	at Pom_utilities.checkoutPage.getContinuebtn(checkoutPage.java:56)
+	at Checkout_module_Test.Checkout_Functional_Negative.emptyAllFieldsTest(Checkout_Functional_Negative.java:31)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>13</td>
+<td>Checkout_module_Test.Checkout_Functional_Negative@3315d2d7</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Login_module.Login_with_valid_credentials.validLoginTest()'><b>validLoginTest</b><br>Test class: Login_module.Login_with_valid_credentials<br/>
+<a href="#Output-205388857" onClick='toggleBox("Output-205388857", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-205388857" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-205388857">
+Login successful<br/>
+Home Page Title: Swag Labs<br/>
+Login successful<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>Login_module.Login_with_valid_credentials@4ef37659</td></tr>
+<tr>
+<td title='Login_module.Login_with_valid_credentials.validLoginTest()'><b>validLoginTest</b><br>Test class: Login_module.Login_with_valid_credentials<br>Parameters: error_user, secret_sauce<br/>
+<a href="#Output-1130152729" onClick='toggleBox("Output-1130152729", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1130152729" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1130152729">
+Username: error_user<br/>
+Home Page Title: Swag Labs<br/>
+Current URL: https://www.saucedemo.com/inventory.html<br/>
+Home page displayed successfully for: error_user<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>Login_module.Login_with_valid_credentials@4ef37659</td></tr>
+<tr>
+<td title='Checkout_module_Test.Checkout_Functional.verfiyFinishbtn()'><b>verfiyFinishbtn</b><br>Test class: Checkout_module_Test.Checkout_Functional<br/>
+<a href="#Output-1356749081" onClick='toggleBox("Output-1356749081", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1356749081" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1356749081">
+Login successful<br/>
+Your Cart<br/>
+Cart page is opened<br/>
+Checkout: Your Information<br/>
+Checkout title is displayed<br/>
+Order Completed page is displayed<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Checkout_module_Test.Checkout_Functional@29647f75</td></tr>
+<tr>
+<td title='Login_module.Login_with_invalid_credentials.invalidLoginTest()'><b>invalidLoginTest</b><br>Test class: Login_module.Login_with_invalid_credentials<br>Parameters: problem_user, <br/>
+<a href="#Output-954023381" onClick='toggleBox("Output-954023381", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-954023381" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-954023381">
+Username: problem_user<br/>
+Password: <br/>
+Error Message: Epic sadface: Password is required<br/>
+Invalid login validation completed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Login_module.Login_with_invalid_credentials@44a7bfbc</td></tr>
+<tr>
+<td title='Login_module.Login_with_valid_credentials.validLoginTest()'><b>validLoginTest</b><br>Test class: Login_module.Login_with_valid_credentials<br>Parameters: visual_user, secret_sauce<br/>
+<a href="#Output-108411710" onClick='toggleBox("Output-108411710", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-108411710" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-108411710">
+Username: visual_user<br/>
+Home Page Title: Swag Labs<br/>
+Current URL: https://www.saucedemo.com/inventory.html<br/>
+Home page displayed successfully for: visual_user<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>Login_module.Login_with_valid_credentials@4ef37659</td></tr>
+<tr>
+<td title='Checkout_module_Test.Checkout_Functional.verifyOrdermessage()'><b>verifyOrdermessage</b><br>Test class: Checkout_module_Test.Checkout_Functional<br/>
+<a href="#Output-634480856" onClick='toggleBox("Output-634480856", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-634480856" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-634480856">
+Login successful<br/>
+Your Cart<br/>
+Cart page is opened<br/>
+Checkout: Your Information<br/>
+Checkout title is displayed<br/>
+Order Completed page is displayed<br/>
+Thank you for your order!
+Your order has been dispatched, and will arrive just as fast as the pony can get there!
+Back Home
+Generate PDF order<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Checkout_module_Test.Checkout_Functional@29647f75</td></tr>
+<tr>
+<td title='Checkout_module_Test.Checkout_Functional.VerifOrderTitle()'><b>VerifOrderTitle</b><br>Test class: Checkout_module_Test.Checkout_Functional<br/>
+<a href="#Output-341446608" onClick='toggleBox("Output-341446608", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-341446608" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-341446608">
+Login successful<br/>
+Your Cart<br/>
+Cart page is opened<br/>
+Checkout: Your Information<br/>
+Checkout title is displayed<br/>
+Order Completed page is displayed<br/>
+Order Title: Checkout: Complete!<br/>
+Order Complete page is displayed<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Checkout_module_Test.Checkout_Functional@29647f75</td></tr>
+<tr>
+<td title='Checkout_module_Test.Checkout_Functional.verifyCancelbtnTest()'><b>verifyCancelbtnTest</b><br>Test class: Checkout_module_Test.Checkout_Functional<br/>
+<a href="#Output-1651495972" onClick='toggleBox("Output-1651495972", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1651495972" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1651495972">
+Login successful<br/>
+Your Cart<br/>
+Cart page is opened<br/>
+Checkout: Your Information<br/>
+Checkout title is displayed<br/>
+Your Cart Page is displayed<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Checkout_module_Test.Checkout_Functional@29647f75</td></tr>
+<tr>
+<td title='Login_module.Login_with_invalid_credentials.invalidLoginTest()'><b>invalidLoginTest</b><br>Test class: Login_module.Login_with_invalid_credentials<br>Parameters: , secret_sauce<br/>
+<a href="#Output-1057601666" onClick='toggleBox("Output-1057601666", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1057601666" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1057601666">
+Username: <br/>
+Password: secret_sauce<br/>
+Error Message: Epic sadface: Username is required<br/>
+Invalid login validation completed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Login_module.Login_with_invalid_credentials@44a7bfbc</td></tr>
+<tr>
+<td title='cart_module_Test.Cart_Functional_Negative.emptyCartCheckoutTest()'><b>emptyCartCheckoutTest</b><br>Test class: cart_module_Test.Cart_Functional_Negative<br/>
+<a href="#Output-1860973216" onClick='toggleBox("Output-1860973216", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1860973216" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1860973216">
+Login successful<br/>
+Your Cart<br/>
+Cart page is opened<br/>
+Cart is empty<br/>
+Checkout: Your Information<br/>
+Checkout title is displayed<br/>
+User remains on Checkout Information page<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>cart_module_Test.Cart_Functional_Negative@52102734</td></tr>
+<tr>
+<td title='cart_module_Test.Cart_Functional_Negative.removeProductTest()'><b>removeProductTest</b><br>Test class: cart_module_Test.Cart_Functional_Negative<br/>
+<a href="#Output-463844008" onClick='toggleBox("Output-463844008", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-463844008" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-463844008">
+Login successful<br/>
+Your Cart<br/>
+Cart page is opened<br/>
+Product is removed from cart<br/>
+</div>
+</td>
+<td></td>
+<td>33</td>
+<td>cart_module_Test.Cart_Functional_Negative@52102734</td></tr>
+<tr>
+<td title='Login_module.Login_with_valid_credentials.validLoginTest()'><b>validLoginTest</b><br>Test class: Login_module.Login_with_valid_credentials<br>Parameters: standard_user, secret_sauce<br/>
+<a href="#Output-1776030353" onClick='toggleBox("Output-1776030353", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1776030353" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1776030353">
+Username: standard_user<br/>
+Home Page Title: Swag Labs<br/>
+Current URL: https://www.saucedemo.com/inventory.html<br/>
+Home page displayed successfully for: standard_user<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>Login_module.Login_with_valid_credentials@4ef37659</td></tr>
+<tr>
+<td title='Login_module.Login_with_invalid_credentials.invalidLoginTest()'><b>invalidLoginTest</b><br>Test class: Login_module.Login_with_invalid_credentials<br>Parameters: sneha, sneha@123<br/>
+<a href="#Output-1484531564" onClick='toggleBox("Output-1484531564", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1484531564" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1484531564">
+Username: sneha<br/>
+Password: sneha@123<br/>
+Error Message: Epic sadface: Username and password do not match any user in this service<br/>
+Invalid login validation completed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Login_module.Login_with_invalid_credentials@44a7bfbc</td></tr>
+<tr>
+<td title='cart_module_Test.Cart_Functional.ProductsInCartPage()'><b>ProductsInCartPage</b><br>Test class: cart_module_Test.Cart_Functional<br/>
+<a href="#Output-843866461" onClick='toggleBox("Output-843866461", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-843866461" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-843866461">
+Login successful<br/>
+Your Cart<br/>
+Cart page is opened<br/>
+Products are present in cart<br/>
+Number of products in cart: 1<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>cart_module_Test.Cart_Functional@e1de817</td></tr>
+<tr>
+<td title='DynamicCatalog_module_Test.DynamicCatalog_Functional_Negative.sliderDuplicateDotsTest()'><b>sliderDuplicateDotsTest</b><br>Test class: DynamicCatalog_module_Test.DynamicCatalog_Functional_Negative<br/>
+<a href="#Output-2058305085" onClick='toggleBox("Output-2058305085", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2058305085" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2058305085">
+Login successful<br/>
+Dynamic Catalog is opened<br/>
+Slider is opened<br/>
+Slider dots are displayed, enabled, and unique<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>DynamicCatalog_module_Test.DynamicCatalog_Functional_Negative@865dd6</td></tr>
+<tr>
+<td title='cart_module_Test.Cart_Functional.verifyCheckoutbtnTest()'><b>verifyCheckoutbtnTest</b><br>Test class: cart_module_Test.Cart_Functional<br/>
+<a href="#Output-424629592" onClick='toggleBox("Output-424629592", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-424629592" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-424629592">
+Login successful<br/>
+Your Cart<br/>
+Cart page is opened<br/>
+Checkout: Your Information<br/>
+Checkout title is displayed<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>cart_module_Test.Cart_Functional@e1de817</td></tr>
+<tr>
+<td title='Checkout_module_Test.Checkout_Functional.verifyContinuebtnTest()'><b>verifyContinuebtnTest</b><br>Test class: Checkout_module_Test.Checkout_Functional<br/>
+<a href="#Output-1252092790" onClick='toggleBox("Output-1252092790", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1252092790" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1252092790">
+Login successful<br/>
+Your Cart<br/>
+Cart page is opened<br/>
+Checkout: Your Information<br/>
+Checkout title is displayed<br/>
+CheckoutOverview Page is displayed<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Checkout_module_Test.Checkout_Functional@29647f75</td></tr>
+<tr>
+<td title='cart_module_Test.Cart_Functional.continueShoppingTest()'><b>continueShoppingTest</b><br>Test class: cart_module_Test.Cart_Functional<br/>
+<a href="#Output-246608043" onClick='toggleBox("Output-246608043", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-246608043" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-246608043">
+Login successful<br/>
+Your Cart<br/>
+Cart page is opened<br/>
+HomePage Title:Products<br/>
+Home Page is displayed<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>cart_module_Test.Cart_Functional@e1de817</td></tr>
+<tr>
+<td title='Login_module.Login_with_invalid_credentials.invalidLoginTest()'><b>invalidLoginTest</b><br>Test class: Login_module.Login_with_invalid_credentials<br>Parameters: problem_user, jijfi<br/>
+<a href="#Output-1583838717" onClick='toggleBox("Output-1583838717", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1583838717" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1583838717">
+Username: problem_user<br/>
+Password: jijfi<br/>
+Error Message: Epic sadface: Username and password do not match any user in this service<br/>
+Invalid login validation completed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Login_module.Login_with_invalid_credentials@44a7bfbc</td></tr>
+<tr>
+<td title='cart_module_Test.Cart_Functional.removeTest()'><b>removeTest</b><br>Test class: cart_module_Test.Cart_Functional<br/>
+<a href="#Output-1155979577" onClick='toggleBox("Output-1155979577", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1155979577" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1155979577">
+Login successful<br/>
+Your Cart<br/>
+Cart page is opened<br/>
+Product is removed from cart<br/>
+</div>
+</td>
+<td></td>
+<td>33</td>
+<td>cart_module_Test.Cart_Functional@e1de817</td></tr>
+<tr>
+<td title='Login_module.Login_with_valid_credentials.validLoginTest()'><b>validLoginTest</b><br>Test class: Login_module.Login_with_valid_credentials<br>Parameters: performance_glitch_user, secret_sauce<br/>
+<a href="#Output-464152008" onClick='toggleBox("Output-464152008", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-464152008" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-464152008">
+Username: performance_glitch_user<br/>
+Home Page Title: Swag Labs<br/>
+Current URL: https://www.saucedemo.com/inventory.html<br/>
+Home page displayed successfully for: performance_glitch_user<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>Login_module.Login_with_valid_credentials@4ef37659</td></tr>
+<tr>
+<td title='HomePage_module.Home_Functional.removeProductTest()'><b>removeProductTest</b><br>Test class: HomePage_module.Home_Functional<br/>
+<a href="#Output-1609791831" onClick='toggleBox("Output-1609791831", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1609791831" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1609791831">
+Login successful<br/>
+Products are removed from cart<br/>
+All Products are removed<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>HomePage_module.Home_Functional@776b83cc</td></tr>
+<tr>
+<td title='Checkout_module_Test.Checkout_Functional.verifyPdfBtn()'><b>verifyPdfBtn</b><br>Test class: Checkout_module_Test.Checkout_Functional<br/>
+<a href="#Output-670577180" onClick='toggleBox("Output-670577180", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-670577180" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-670577180">
+Login successful<br/>
+Your Cart<br/>
+Cart page is opened<br/>
+Checkout: Your Information<br/>
+Checkout title is displayed<br/>
+Order Completed page is displayed<br/>
+Pdf is downloaded successfully<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Checkout_module_Test.Checkout_Functional@29647f75</td></tr>
+<tr>
+<td title='Checkout_module_Test.Checkout_Functional.InfoTest()'><b>InfoTest</b><br>Test class: Checkout_module_Test.Checkout_Functional<br/>
+<a href="#Output-2015749775" onClick='toggleBox("Output-2015749775", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2015749775" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2015749775">
+Login successful<br/>
+Your Cart<br/>
+Cart page is opened<br/>
+Checkout: Your Information<br/>
+Checkout title is displayed<br/>
+First Name is entered correctly: Sneha<br/>
+Last Name is entered correctly: k<br/>
+Zip Code is entered correctly: 123456<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Checkout_module_Test.Checkout_Functional@29647f75</td></tr>
+<tr>
+<td title='Login_module.Login_with_invalid_credentials.invalidLoginTest()'><b>invalidLoginTest</b><br>Test class: Login_module.Login_with_invalid_credentials<br>Parameters: locked_out_user, secret_sauce<br/>
+<a href="#Output-169763893" onClick='toggleBox("Output-169763893", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-169763893" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-169763893">
+Username: locked_out_user<br/>
+Password: secret_sauce<br/>
+Error Message: Epic sadface: Sorry, this user has been locked out.<br/>
+Invalid login validation completed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Login_module.Login_with_invalid_credentials@44a7bfbc</td></tr>
+<tr>
+<td title='HomePage_module.Home_Functional_Negative.verifyRemoveButtonState()'><b>verifyRemoveButtonState</b><br>Test class: HomePage_module.Home_Functional_Negative<br/>
+<a href="#Output-1559511576" onClick='toggleBox("Output-1559511576", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1559511576" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1559511576">
+Login successful<br/>
+Remove buttons are not displayed before adding products<br/>
+Logging out<br/>
+Logout successful<br/>
+</div>
+</td>
+<td></td>
+<td>16</td>
+<td>HomePage_module.Home_Functional_Negative@37858383</td></tr>
+<tr>
+<td title='cart_module_Test.Cart_Functional.verifyProductInCartTest()'><b>verifyProductInCartTest</b><br>Test class: cart_module_Test.Cart_Functional<br/>
+<a href="#Output-341949964" onClick='toggleBox("Output-341949964", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-341949964" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-341949964">
+Login successful<br/>
+Your Cart<br/>
+Cart page is opened<br/>
+Your Cart<br/>
+Verified that product is added to cartpage<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>cart_module_Test.Cart_Functional@e1de817</td></tr>
+<tr>
+<td title='HomePage_module.Home_Functional.verifyHomePageByMenuList()'><b>verifyHomePageByMenuList</b><br>Test class: HomePage_module.Home_Functional<br/>
+<a href="#Output-151483127" onClick='toggleBox("Output-151483127", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-151483127" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-151483127">
+Login successful<br/>
+HomePage Title:Products<br/>
+Home Page is displayed<br/>
+Products are visible<br/>
+Home page contains menu items<br/>
+Your Cart<br/>
+Cart page is opened<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>HomePage_module.Home_Functional@776b83cc</td></tr>
+<tr>
+<td title='HomePage_module.Home_Functional_Negative.verifyProductsNotMissing()'><b>verifyProductsNotMissing</b><br>Test class: HomePage_module.Home_Functional_Negative<br/>
+<a href="#Output-475226913" onClick='toggleBox("Output-475226913", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-475226913" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-475226913">
+Login successful<br/>
+Products are visible<br/>
+Logging out<br/>
+Logout successful<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>HomePage_module.Home_Functional_Negative@37858383</td></tr>
+<tr>
+<td title='HomePage_module.Home_Functional.verifyAddAllProducts()'><b>verifyAddAllProducts</b><br>Test class: HomePage_module.Home_Functional<br/>
+<a href="#Output-262890008" onClick='toggleBox("Output-262890008", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-262890008" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-262890008">
+Login successful<br/>
+Products are added to cart<br/>
+All Products are added to cart<br/>
+Logging out<br/>
+Logout successful<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>HomePage_module.Home_Functional@776b83cc</td></tr>
+<tr>
+<td title='Checkout_module_Test.Checkout_Functional.verifyBackToHomeTest()'><b>verifyBackToHomeTest</b><br>Test class: Checkout_module_Test.Checkout_Functional<br/>
+<a href="#Output-2096692043" onClick='toggleBox("Output-2096692043", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2096692043" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2096692043">
+Login successful<br/>
+Your Cart<br/>
+Cart page is opened<br/>
+Checkout: Your Information<br/>
+Checkout title is displayed<br/>
+Order Completed page is displayed<br/>
+HomePage is displayed<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Checkout_module_Test.Checkout_Functional@29647f75</td></tr>
+<tr>
+<td title='Login_module.Login_with_invalid_credentials.invalidLoginTest()'><b>invalidLoginTest</b><br>Test class: Login_module.Login_with_invalid_credentials<br>Parameters: jnije, secret_sauce<br/>
+<a href="#Output-863576268" onClick='toggleBox("Output-863576268", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-863576268" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-863576268">
+Username: jnije<br/>
+Password: secret_sauce<br/>
+Error Message: Epic sadface: Username and password do not match any user in this service<br/>
+Invalid login validation completed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Login_module.Login_with_invalid_credentials@44a7bfbc</td></tr>
+<tr>
+<td title='Checkout_module_Test.Checkout_Functional.SummaryOfProduct()'><b>SummaryOfProduct</b><br>Test class: Checkout_module_Test.Checkout_Functional<br/>
+<a href="#Output-445147378" onClick='toggleBox("Output-445147378", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-445147378" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-445147378">
+Login successful<br/>
+Your Cart<br/>
+Cart page is opened<br/>
+Checkout: Your Information<br/>
+Checkout title is displayed<br/>
+Payment Information:
+SauceCard #31337
+Shipping Information:
+Free Pony Express Delivery!
+Price Total
+Item total: $9.99
+Tax: $0.80
+Total: $10.79
+Cancel
+Finish<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Checkout_module_Test.Checkout_Functional@29647f75</td></tr>
+<tr>
+<td title='Checkout_module_Test.Checkout_Functional.verifyTitleOfPageTest()'><b>verifyTitleOfPageTest</b><br>Test class: Checkout_module_Test.Checkout_Functional<br/>
+<a href="#Output-324757671" onClick='toggleBox("Output-324757671", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-324757671" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-324757671">
+Login successful<br/>
+Your Cart<br/>
+Cart page is opened<br/>
+Checkout: Your Information<br/>
+Checkout title is displayed<br/>
+Checkout Overview page is displayed<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Checkout_module_Test.Checkout_Functional@29647f75</td></tr>
+<tr>
+<td title='Checkout_module_Test.Checkout_Functional.verifyCancelbtn()'><b>verifyCancelbtn</b><br>Test class: Checkout_module_Test.Checkout_Functional<br/>
+<a href="#Output-1214817879" onClick='toggleBox("Output-1214817879", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1214817879" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1214817879">
+Login successful<br/>
+Your Cart<br/>
+Cart page is opened<br/>
+Checkout: Your Information<br/>
+Checkout title is displayed<br/>
+HomePage is displayed<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Checkout_module_Test.Checkout_Functional@29647f75</td></tr>
+<tr>
+<td title='Login_module.Login_with_valid_credentials.validLoginTest()'><b>validLoginTest</b><br>Test class: Login_module.Login_with_valid_credentials<br>Parameters: problem_user, secret_sauce<br/>
+<a href="#Output-2080951159" onClick='toggleBox("Output-2080951159", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2080951159" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2080951159">
+Username: problem_user<br/>
+Home Page Title: Swag Labs<br/>
+Current URL: https://www.saucedemo.com/inventory.html<br/>
+Home page displayed successfully for: problem_user<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>Login_module.Login_with_valid_credentials@4ef37659</td></tr>
+</table><p>
+</body>
+</html>

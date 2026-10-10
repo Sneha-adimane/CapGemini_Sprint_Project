@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="ecomSwagLabsDynamicCatalog.DynamicCatalog_System"/>
+      <class name="ecomSwagLabsDynamicCatalog.DynamicCatalog_Smoke"/>
+      <class name="ecomSwagLabsDynamicCatalog.DynamicCatalog_System_Negative"/>
+      <class name="ecomSwagLabsDynamicCatalog.DynamicCatalog_Integration_Negative"/>
+      <class name="ecomSwagLabsDynamicCatalog.DynamicCatalog_Functional_Negative"/>
+      <class name="ecomSwagLabsDynamicCatalog.DynamicCatalog_Functional"/>
+      <class name="ecomSwagLabsDynamicCatalog.DynamicCatalog_Integration"/>
+      <class name="ecomSwagLabsDynamicCatalog.DynamicCatalog_Smoke_Negative"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

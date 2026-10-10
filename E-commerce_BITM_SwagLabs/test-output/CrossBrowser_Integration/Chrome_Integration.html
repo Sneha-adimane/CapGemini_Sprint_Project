@@ -1,0 +1,686 @@
+<html>
+<head>
+<title>TestNG:  Chrome_Integration</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Chrome_Integration</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>31/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Oct 09 20:35:41 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>578 seconds (578167 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>integration </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Checkout_module_Test.Checkout_Integration_Negative.invalidCheckoutMustNotOpenOverview()'><b>invalidCheckoutMustNotOpenOverview</b><br>Test class: Checkout_module_Test.Checkout_Integration_Negative<br/>
+<a href="#Output-1284098442" onClick='toggleBox("Output-1284098442", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1284098442" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1284098442">
+Login successful<br/>
+Your Cart<br/>
+Cart page is opened<br/>
+Checkout: Your Information<br/>
+Checkout title is displayed<br/>
+Checkout blocked due to missing customer information<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>Checkout_module_Test.Checkout_Integration_Negative@75db5df9</td></tr>
+<tr>
+<td title='DynamicCatalog_module_Test.DynamicCatalog_Integration.loginToLazyLoad()'><b>loginToLazyLoad</b><br>Test class: DynamicCatalog_module_Test.DynamicCatalog_Integration<br/>
+<a href="#Output-1482874276" onClick='toggleBox("Output-1482874276", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1482874276" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1482874276">
+Login successful<br/>
+Dynamic Catalog is opened<br/>
+Lazy Load is opened<br/>
+HomePage Title:Products<br/>
+Home Page is displayed<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>DynamicCatalog_module_Test.DynamicCatalog_Integration@385e9564</td></tr>
+<tr>
+<td title='Checkout_module_Test.Checkout_Integration.OrderToAllTest()'><b>OrderToAllTest</b><br>Test class: Checkout_module_Test.Checkout_Integration<br/>
+<a href="#Output-1463905865" onClick='toggleBox("Output-1463905865", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1463905865" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1463905865">
+Login successful<br/>
+HomePage Title:Products<br/>
+Home Page is displayed<br/>
+Your Cart<br/>
+Cart page is opened<br/>
+Sauce Labs Bike Light<br/>
+Checkout: Your Information<br/>
+Checkout title is displayed<br/>
+Payment Information:
+SauceCard #31337
+Shipping Information:
+Free Pony Express Delivery!
+Price Total
+Item total: $9.99
+Tax: $0.80
+Total: $10.79
+Cancel
+Finish<br/>
+Order Completed page is displayed<br/>
+Thank you for your order!
+Your order has been dispatched, and will arrive just as fast as the pony can get there!
+Back Home
+Generate PDF order<br/>
+Dynamic Catalog is opened<br/>
+Lazy Load is opened<br/>
+Dynamic Catalog is opened<br/>
+Spinner is opened<br/>
+Dynamic Catalog is opened<br/>
+Slider is opened<br/>
+Logging out<br/>
+Logout successful<br/>
+</div>
+</td>
+<td></td>
+<td>30</td>
+<td>Checkout_module_Test.Checkout_Integration@33c911a1</td></tr>
+<tr>
+<td title='Checkout_module_Test.Checkout_Integration.checkoutToLogout()'><b>checkoutToLogout</b><br>Test class: Checkout_module_Test.Checkout_Integration<br/>
+<a href="#Output-289214325" onClick='toggleBox("Output-289214325", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-289214325" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-289214325">
+Login successful<br/>
+Your Cart<br/>
+Cart page is opened<br/>
+Sauce Labs Bike Light<br/>
+Checkout: Your Information<br/>
+Checkout title is displayed<br/>
+First Name is entered correctly: Sneha<br/>
+Last Name is entered correctly: k<br/>
+Zip Code is entered correctly: 123456<br/>
+Logging out<br/>
+Logout successful<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>Checkout_module_Test.Checkout_Integration@33c911a1</td></tr>
+<tr>
+<td title='Checkout_module_Test.Checkout_Integration.verifyCheckoutToLogout()'><b>verifyCheckoutToLogout</b><br>Test class: Checkout_module_Test.Checkout_Integration<br/>
+<a href="#Output-943051773" onClick='toggleBox("Output-943051773", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-943051773" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-943051773">
+Login successful<br/>
+Your Cart<br/>
+Cart page is opened<br/>
+Checkout: Your Information<br/>
+Checkout title is displayed<br/>
+Logging out<br/>
+Logout successful<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>Checkout_module_Test.Checkout_Integration@33c911a1</td></tr>
+<tr>
+<td title='HomePage_module.Home_Integration_Negative.verifyProductRemovalIntegration()'><b>verifyProductRemovalIntegration</b><br>Test class: HomePage_module.Home_Integration_Negative<br/>
+<a href="#Output-275719205" onClick='toggleBox("Output-275719205", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-275719205" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-275719205">
+Login successful<br/>
+Your Cart<br/>
+Cart page is opened<br/>
+Product removed successfully and cart is empty<br/>
+Logging out<br/>
+Logout successful<br/>
+</div>
+</td>
+<td></td>
+<td>30</td>
+<td>HomePage_module.Home_Integration_Negative@7d8704ef</td></tr>
+<tr>
+<td title='cart_module_Test.Cart_Integration.cartToProductTest()'><b>cartToProductTest</b><br>Test class: cart_module_Test.Cart_Integration<br/>
+<a href="#Output-1663149482" onClick='toggleBox("Output-1663149482", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1663149482" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1663149482">
+Login successful<br/>
+Your Cart<br/>
+Cart page is opened<br/>
+HomePage Title:Products<br/>
+Home Page is displayed<br/>
+Logging out<br/>
+Logout successful<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>cart_module_Test.Cart_Integration@4e50c791</td></tr>
+<tr>
+<td title='Checkout_module_Test.Checkout_Integration.OrderToLaogout()'><b>OrderToLaogout</b><br>Test class: Checkout_module_Test.Checkout_Integration<br/>
+<a href="#Output-1037220289" onClick='toggleBox("Output-1037220289", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1037220289" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1037220289">
+Login successful<br/>
+Your Cart<br/>
+Cart page is opened<br/>
+Sauce Labs Bike Light<br/>
+Checkout: Your Information<br/>
+Checkout title is displayed<br/>
+First Name is entered correctly: Sneha<br/>
+Last Name is entered correctly: k<br/>
+Zip Code is entered correctly: 123456<br/>
+Payment Information:
+SauceCard #31337
+Shipping Information:
+Free Pony Express Delivery!
+Price Total
+Item total: $9.99
+Tax: $0.80
+Total: $10.79
+Cancel
+Finish<br/>
+Order Completed page is displayed<br/>
+Thank you for your order!
+Your order has been dispatched, and will arrive just as fast as the pony can get there!
+Back Home
+Generate PDF order<br/>
+Logging out<br/>
+Logout successful<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>Checkout_module_Test.Checkout_Integration@33c911a1</td></tr>
+<tr>
+<td title='HomePage_module.Home_Integration_Negative.verifyCartWithoutAddingProduct()'><b>verifyCartWithoutAddingProduct</b><br>Test class: HomePage_module.Home_Integration_Negative<br/>
+<a href="#Output-610123017" onClick='toggleBox("Output-610123017", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-610123017" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-610123017">
+Login successful<br/>
+Your Cart<br/>
+Cart page is opened<br/>
+Cart remains empty without adding a product<br/>
+Logging out<br/>
+Logout successful<br/>
+</div>
+</td>
+<td></td>
+<td>28</td>
+<td>HomePage_module.Home_Integration_Negative@7d8704ef</td></tr>
+<tr>
+<td title='Login_module.Login_with_valid_credentials.validLoginTest()'><b>validLoginTest</b><br>Test class: Login_module.Login_with_valid_credentials<br>Parameters: performance_glitch_user, secret_sauce<br/>
+<a href="#Output-1994085390" onClick='toggleBox("Output-1994085390", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1994085390" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1994085390">
+Username: performance_glitch_user<br/>
+Home Page Title: Swag Labs<br/>
+Current URL: https://www.saucedemo.com/inventory.html<br/>
+Home page displayed successfully for: performance_glitch_user<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>Login_module.Login_with_valid_credentials@66d18979</td></tr>
+<tr>
+<td title='cart_module_Test.Cart_Integration.ProductInCart()'><b>ProductInCart</b><br>Test class: cart_module_Test.Cart_Integration<br/>
+<a href="#Output-1335082762" onClick='toggleBox("Output-1335082762", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1335082762" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1335082762">
+Login successful<br/>
+Your Cart<br/>
+Cart page is opened<br/>
+Sauce Labs Bike Light<br/>
+Both product names are same<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>cart_module_Test.Cart_Integration@4e50c791</td></tr>
+<tr>
+<td title='Checkout_module_Test.Checkout_Integration.OverviewToLogout()'><b>OverviewToLogout</b><br>Test class: Checkout_module_Test.Checkout_Integration<br/>
+<a href="#Output-1073839768" onClick='toggleBox("Output-1073839768", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1073839768" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1073839768">
+Login successful<br/>
+Your Cart<br/>
+Cart page is opened<br/>
+Sauce Labs Bike Light<br/>
+Checkout: Your Information<br/>
+Checkout title is displayed<br/>
+First Name is entered correctly: Sneha<br/>
+Last Name is entered correctly: k<br/>
+Zip Code is entered correctly: 123456<br/>
+Payment Information:
+SauceCard #31337
+Shipping Information:
+Free Pony Express Delivery!
+Price Total
+Item total: $9.99
+Tax: $0.80
+Total: $10.79
+Cancel
+Finish<br/>
+Logging out<br/>
+Logout successful<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>Checkout_module_Test.Checkout_Integration@33c911a1</td></tr>
+<tr>
+<td title='Login_module.Login_with_valid_credentials.validLoginTest()'><b>validLoginTest</b><br>Test class: Login_module.Login_with_valid_credentials<br/>
+<a href="#Output-905847077" onClick='toggleBox("Output-905847077", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-905847077" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-905847077">
+Login successful<br/>
+Home Page Title: Swag Labs<br/>
+Login successful<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>Login_module.Login_with_valid_credentials@66d18979</td></tr>
+<tr>
+<td title='Checkout_module_Test.Checkout_Integration.verifyCompleteToHome()'><b>verifyCompleteToHome</b><br>Test class: Checkout_module_Test.Checkout_Integration<br/>
+<a href="#Output-347725669" onClick='toggleBox("Output-347725669", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-347725669" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-347725669">
+Login successful<br/>
+Your Cart<br/>
+Cart page is opened<br/>
+Checkout: Your Information<br/>
+Checkout title is displayed<br/>
+Order Completed page is displayed<br/>
+HomePage is displayed<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>Checkout_module_Test.Checkout_Integration@33c911a1</td></tr>
+<tr>
+<td title='Login_module.Login_with_valid_credentials.validLoginTest()'><b>validLoginTest</b><br>Test class: Login_module.Login_with_valid_credentials<br>Parameters: error_user, secret_sauce<br/>
+<a href="#Output-463690173" onClick='toggleBox("Output-463690173", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-463690173" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-463690173">
+Username: error_user<br/>
+Home Page Title: Swag Labs<br/>
+Current URL: https://www.saucedemo.com/inventory.html<br/>
+Home page displayed successfully for: error_user<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>Login_module.Login_with_valid_credentials@66d18979</td></tr>
+<tr>
+<td title='Checkout_module_Test.Checkout_Integration.OrderToAllItems()'><b>OrderToAllItems</b><br>Test class: Checkout_module_Test.Checkout_Integration<br/>
+<a href="#Output-1682178149" onClick='toggleBox("Output-1682178149", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1682178149" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1682178149">
+Login successful<br/>
+HomePage Title:Products<br/>
+Home Page is displayed<br/>
+Your Cart<br/>
+Cart page is opened<br/>
+Sauce Labs Bike Light<br/>
+Checkout: Your Information<br/>
+Checkout title is displayed<br/>
+Payment Information:
+SauceCard #31337
+Shipping Information:
+Free Pony Express Delivery!
+Price Total
+Item total: $9.99
+Tax: $0.80
+Total: $10.79
+Cancel
+Finish<br/>
+Order Completed page is displayed<br/>
+Thank you for your order!
+Your order has been dispatched, and will arrive just as fast as the pony can get there!
+Back Home
+Generate PDF order<br/>
+HomePage Title:Products<br/>
+Home Page is displayed<br/>
+Logging out<br/>
+Logout successful<br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>Checkout_module_Test.Checkout_Integration@33c911a1</td></tr>
+<tr>
+<td title='DynamicCatalog_module_Test.DynamicCatalog_Integration.DynamicCatalogTOAll()'><b>DynamicCatalogTOAll</b><br>Test class: DynamicCatalog_module_Test.DynamicCatalog_Integration<br/>
+<a href="#Output-567367986" onClick='toggleBox("Output-567367986", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-567367986" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-567367986">
+Login successful<br/>
+Dynamic Catalog is opened<br/>
+Lazy Load is opened<br/>
+Dynamic Catalog is opened<br/>
+Spinner is opened<br/>
+Dynamic Catalog is opened<br/>
+Slider is opened<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>DynamicCatalog_module_Test.DynamicCatalog_Integration@385e9564</td></tr>
+<tr>
+<td title='DynamicCatalog_module_Test.DynamicCatalog_Integration_Negative.sliderProductsNotRemainInAllItemsTest()'><b>sliderProductsNotRemainInAllItemsTest</b><br>Test class: DynamicCatalog_module_Test.DynamicCatalog_Integration_Negative<br/>
+<a href="#Output-1004308853" onClick='toggleBox("Output-1004308853", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1004308853" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1004308853">
+Login successful<br/>
+Dynamic Catalog is opened<br/>
+Slider is opened<br/>
+Slider products displayed<br/>
+Slider elements are not displayed on All Items<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>DynamicCatalog_module_Test.DynamicCatalog_Integration_Negative@5b94b04d</td></tr>
+<tr>
+<td title='cart_module_Test.Cart_Integration.addProductToAllItem()'><b>addProductToAllItem</b><br>Test class: cart_module_Test.Cart_Integration<br/>
+<a href="#Output-1869813593" onClick='toggleBox("Output-1869813593", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1869813593" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1869813593">
+Login successful<br/>
+Your Cart<br/>
+Cart page is opened<br/>
+Products are present in cart<br/>
+Number of products in cart: 1<br/>
+HomePage Title:Products<br/>
+Home Page is displayed<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>cart_module_Test.Cart_Integration@4e50c791</td></tr>
+<tr>
+<td title='cart_module_Test.Cart_Integration.addproductToDynamicCatalog()'><b>addproductToDynamicCatalog</b><br>Test class: cart_module_Test.Cart_Integration<br/>
+<a href="#Output-1448580731" onClick='toggleBox("Output-1448580731", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1448580731" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1448580731">
+Login successful<br/>
+Your Cart<br/>
+Cart page is opened<br/>
+Products are present in cart<br/>
+Number of products in cart: 1<br/>
+Dynamic Catalog is opened<br/>
+Lazy Load is opened<br/>
+Dynamic Catalog is opened<br/>
+Spinner is opened<br/>
+Dynamic Catalog is opened<br/>
+Slider is opened<br/>
+</div>
+</td>
+<td></td>
+<td>19</td>
+<td>cart_module_Test.Cart_Integration@4e50c791</td></tr>
+<tr>
+<td title='HomePage_module.Home_Integration.verifyHomeToCart()'><b>verifyHomeToCart</b><br>Test class: HomePage_module.Home_Integration<br/>
+<a href="#Output-1346237136" onClick='toggleBox("Output-1346237136", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1346237136" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1346237136">
+Login successful<br/>
+HomePage Title:Products<br/>
+Home Page is displayed<br/>
+Your Cart<br/>
+Cart page is opened<br/>
+Logging out<br/>
+Logout successful<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>HomePage_module.Home_Integration@17f7cd29</td></tr>
+<tr>
+<td title='Checkout_module_Test.Checkout_Integration.verifyCartToCheckout()'><b>verifyCartToCheckout</b><br>Test class: Checkout_module_Test.Checkout_Integration<br/>
+<a href="#Output-1173504479" onClick='toggleBox("Output-1173504479", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1173504479" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1173504479">
+Login successful<br/>
+Your Cart<br/>
+Cart page is opened<br/>
+Sauce Labs Bike Light<br/>
+Both product names are same<br/>
+Checkout: Your Information<br/>
+Checkout title is displayed<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>Checkout_module_Test.Checkout_Integration@33c911a1</td></tr>
+<tr>
+<td title='Login_module.Login_with_valid_credentials.validLoginTest()'><b>validLoginTest</b><br>Test class: Login_module.Login_with_valid_credentials<br>Parameters: visual_user, secret_sauce<br/>
+<a href="#Output-1901824111" onClick='toggleBox("Output-1901824111", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1901824111" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1901824111">
+Username: visual_user<br/>
+Home Page Title: Swag Labs<br/>
+Current URL: https://www.saucedemo.com/inventory.html<br/>
+Home page displayed successfully for: visual_user<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>Login_module.Login_with_valid_credentials@66d18979</td></tr>
+<tr>
+<td title='Checkout_module_Test.Checkout_Integration.verifyOverviewToComplete()'><b>verifyOverviewToComplete</b><br>Test class: Checkout_module_Test.Checkout_Integration<br/>
+<a href="#Output-1382394077" onClick='toggleBox("Output-1382394077", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1382394077" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1382394077">
+Login successful<br/>
+Your Cart<br/>
+Cart page is opened<br/>
+Checkout: Your Information<br/>
+Checkout title is displayed<br/>
+Order Completed page is displayed<br/>
+Thank you for your order!
+Your order has been dispatched, and will arrive just as fast as the pony can get there!
+Back Home
+Generate PDF order<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>Checkout_module_Test.Checkout_Integration@33c911a1</td></tr>
+<tr>
+<td title='DynamicCatalog_module_Test.DynamicCatalog_Integration.loginToSlider()'><b>loginToSlider</b><br>Test class: DynamicCatalog_module_Test.DynamicCatalog_Integration<br/>
+<a href="#Output-1402120747" onClick='toggleBox("Output-1402120747", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1402120747" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1402120747">
+Login successful<br/>
+Dynamic Catalog is opened<br/>
+Slider is opened<br/>
+Slider products displayed<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>DynamicCatalog_module_Test.DynamicCatalog_Integration@385e9564</td></tr>
+<tr>
+<td title='DynamicCatalog_module_Test.DynamicCatalog_Integration.loginToSpinner()'><b>loginToSpinner</b><br>Test class: DynamicCatalog_module_Test.DynamicCatalog_Integration<br/>
+<a href="#Output-1036502525" onClick='toggleBox("Output-1036502525", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1036502525" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1036502525">
+Login successful<br/>
+Dynamic Catalog is opened<br/>
+Spinner is opened<br/>
+Spinner products displayed<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>DynamicCatalog_module_Test.DynamicCatalog_Integration@385e9564</td></tr>
+<tr>
+<td title='HomePage_module.Home_Integration.verifySortingOptions()'><b>verifySortingOptions</b><br>Test class: HomePage_module.Home_Integration<br/>
+<a href="#Output-989896315" onClick='toggleBox("Output-989896315", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-989896315" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-989896315">
+Login successful<br/>
+Sorted by Name (A to Z): Sauce Labs Backpack, Sauce Labs Bike Light, Sauce Labs Bolt T-Shirt, Sauce Labs Fleece Jacket, Sauce Labs Onesie, Test.allTheThings() T-Shirt (Red)<br/>
+Sorted by Name (Z to A): Test.allTheThings() T-Shirt (Red), Sauce Labs Onesie, Sauce Labs Fleece Jacket, Sauce Labs Bolt T-Shirt, Sauce Labs Bike Light, Sauce Labs Backpack<br/>
+Sorted by Price (Low to high): $7.99, $9.99, $15.99, $15.99, $29.99, $49.99<br/>
+Sorted by Price (High to low): $49.99, $29.99, $15.99, $15.99, $9.99, $7.99<br/>
+Logging out<br/>
+Logout successful<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>HomePage_module.Home_Integration@17f7cd29</td></tr>
+<tr>
+<td title='Checkout_module_Test.Checkout_Integration.verifyCheckoutToOverview()'><b>verifyCheckoutToOverview</b><br>Test class: Checkout_module_Test.Checkout_Integration<br/>
+<a href="#Output-381730363" onClick='toggleBox("Output-381730363", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-381730363" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-381730363">
+Login successful<br/>
+Your Cart<br/>
+Cart page is opened<br/>
+Checkout: Your Information<br/>
+Checkout title is displayed<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>Checkout_module_Test.Checkout_Integration@33c911a1</td></tr>
+<tr>
+<td title='Login_module.Login_with_valid_credentials.validLoginTest()'><b>validLoginTest</b><br>Test class: Login_module.Login_with_valid_credentials<br>Parameters: standard_user, secret_sauce<br/>
+<a href="#Output-922547904" onClick='toggleBox("Output-922547904", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-922547904" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-922547904">
+Username: standard_user<br/>
+Home Page Title: Swag Labs<br/>
+Current URL: https://www.saucedemo.com/inventory.html<br/>
+Home page displayed successfully for: standard_user<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>Login_module.Login_with_valid_credentials@66d18979</td></tr>
+<tr>
+<td title='Login_module.Login_with_valid_credentials.validLoginTest()'><b>validLoginTest</b><br>Test class: Login_module.Login_with_valid_credentials<br>Parameters: problem_user, secret_sauce<br/>
+<a href="#Output-693417450" onClick='toggleBox("Output-693417450", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-693417450" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-693417450">
+Username: problem_user<br/>
+Home Page Title: Swag Labs<br/>
+Current URL: https://www.saucedemo.com/inventory.html<br/>
+Home page displayed successfully for: problem_user<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>Login_module.Login_with_valid_credentials@66d18979</td></tr>
+<tr>
+<td title='cart_module_Test.Cart_Integration_Negative.removedProductNotInCheckoutTest()'><b>removedProductNotInCheckoutTest</b><br>Test class: cart_module_Test.Cart_Integration_Negative<br/>
+<a href="#Output-1613065499" onClick='toggleBox("Output-1613065499", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1613065499" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1613065499">
+Login successful<br/>
+Your Cart<br/>
+Cart page is opened<br/>
+</div>
+</td>
+<td></td>
+<td>28</td>
+<td>cart_module_Test.Cart_Integration_Negative@7530ad9c</td></tr>
+</table><p>
+</body>
+</html>
