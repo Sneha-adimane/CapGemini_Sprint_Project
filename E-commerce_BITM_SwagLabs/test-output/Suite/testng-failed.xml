@@ -3,7 +3,7 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Checkout_module_Test.Checkout_Integration_Negative">
+      <class name="ecomSwagLabsHome.Home_System">
         <methods>
           <include name="at"/>
           <include name="bs"/>
@@ -11,44 +11,9 @@
           <include name="as"/>
           <include name="bm"/>
           <include name="am"/>
-          <include name="invalidCheckoutMustNotOpenOverview"/>
+          <include name="verifyCompleteHomeFlow"/>
         </methods>
-      </class> <!-- Checkout_module_Test.Checkout_Integration_Negative -->
-      <class name="Checkout_module_Test.Checkout_Smoke_Negative">
-        <methods>
-          <include name="at"/>
-          <include name="bs"/>
-          <include name="bt"/>
-          <include name="as"/>
-          <include name="bm"/>
-          <include name="am"/>
-          <include name="checkoutMustRejectEmptyInformation"/>
-        </methods>
-      </class> <!-- Checkout_module_Test.Checkout_Smoke_Negative -->
-      <class name="Checkout_module_Test.Checkout_System_Negative">
-        <methods>
-          <include name="incompleteOrderMustNotComplete"/>
-          <include name="at"/>
-          <include name="bs"/>
-          <include name="bt"/>
-          <include name="as"/>
-          <include name="bm"/>
-          <include name="am"/>
-        </methods>
-      </class> <!-- Checkout_module_Test.Checkout_System_Negative -->
-      <class name="Checkout_module_Test.Checkout_Functional_Negative">
-        <methods>
-          <include name="at"/>
-          <include name="emptyFirstNameTest" invocation-numbers="0"/>
-          <include name="emptyAllFieldsTest" invocation-numbers="0"/>
-          <include name="bs"/>
-          <include name="bt"/>
-          <include name="as"/>
-          <include name="bm"/>
-          <include name="am"/>
-          <include name="emptyLastNameTest" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- Checkout_module_Test.Checkout_Functional_Negative -->
+      </class> <!-- ecomSwagLabsHome.Home_System -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
