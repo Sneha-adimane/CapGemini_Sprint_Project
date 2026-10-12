@@ -52,20 +52,41 @@ public class CompletePage {
 	}
 
 	public void getPdfbtn() throws InterruptedException {
-		pdfbtn.click();
-		Thread.sleep(2000);
-		File folder = new File(System.getProperty("user.home") + "\\Downloads");
-		File[] files = folder.listFiles();
-		boolean pdfFound = false;
-		for (File file : files) {
-			if (file.getName().endsWith(".pdf")) {
-		        pdfFound = true;
-		        break;
-		    }
-		}
-		Assert.assertTrue(pdfFound, "PDF is not generated");
-		Reporter.log("Pdf is downloaded successfully" , true);
+
+	    // Click the Generate PDF button
+	    pdfbtn.click();
+
+	    // Wait for the PDF download
+	    Thread.sleep(2000);
+
+	    // Locate the Downloads folder
+	    File folder = new File(System.getProperty("user.home") + "\\Downloads");
+
+	    // Get the files in the Downloads folder
+	    File[] files = folder.listFiles();
+
+	    boolean pdfFound = false;
+
+	    // Check whether the folder is accessible
+	    if (files != null) {
+
+	        for (File file : files) {
+
+	            if (file.isFile() &&
+	                file.getName().toLowerCase().endsWith(".pdf")) {
+
+	                pdfFound = true;
+	                System.out.println("PDF downloaded successfully: " + file.getName());
+	                break;
+	            }
+	        }
+
+	    } else {
+	        System.out.println("Unable to read the Downloads folder.");
+	    }
+
+	    // Verify the PDF download
+	    Assert.assertTrue(pdfFound,"PDF file was not downloaded successfully.");
 	}
-	
-	
+		
 }
