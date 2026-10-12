@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Open Database]]>
@@ -17,130 +17,19 @@
       <![CDATA[Login successful]]>
     </line>
     <line>
-      <![CDATA[Home Page Title: Swag Labs]]>
+      <![CDATA[Your Cart]]>
     </line>
     <line>
-      <![CDATA[Login successful]]>
+      <![CDATA[Cart page is opened]]>
     </line>
     <line>
-      <![CDATA[Test completed]]>
+      <![CDATA[Checkout: Your Information]]>
     </line>
     <line>
-      <![CDATA[Browser closed successfully]]>
+      <![CDATA[Checkout title is displayed]]>
     </line>
     <line>
-      <![CDATA[Opening browser]]>
-    </line>
-    <line>
-      <![CDATA[Application launched]]>
-    </line>
-    <line>
-      <![CDATA[Username: standard_user]]>
-    </line>
-    <line>
-      <![CDATA[Home Page Title: Swag Labs]]>
-    </line>
-    <line>
-      <![CDATA[Current URL: https://www.saucedemo.com/inventory.html]]>
-    </line>
-    <line>
-      <![CDATA[Home page displayed successfully for: standard_user]]>
-    </line>
-    <line>
-      <![CDATA[Test completed]]>
-    </line>
-    <line>
-      <![CDATA[Browser closed successfully]]>
-    </line>
-    <line>
-      <![CDATA[Opening browser]]>
-    </line>
-    <line>
-      <![CDATA[Application launched]]>
-    </line>
-    <line>
-      <![CDATA[Username: problem_user]]>
-    </line>
-    <line>
-      <![CDATA[Home Page Title: Swag Labs]]>
-    </line>
-    <line>
-      <![CDATA[Current URL: https://www.saucedemo.com/inventory.html]]>
-    </line>
-    <line>
-      <![CDATA[Home page displayed successfully for: problem_user]]>
-    </line>
-    <line>
-      <![CDATA[Test completed]]>
-    </line>
-    <line>
-      <![CDATA[Browser closed successfully]]>
-    </line>
-    <line>
-      <![CDATA[Opening browser]]>
-    </line>
-    <line>
-      <![CDATA[Application launched]]>
-    </line>
-    <line>
-      <![CDATA[Username: performance_glitch_user]]>
-    </line>
-    <line>
-      <![CDATA[Home Page Title: Swag Labs]]>
-    </line>
-    <line>
-      <![CDATA[Current URL: https://www.saucedemo.com/inventory.html]]>
-    </line>
-    <line>
-      <![CDATA[Home page displayed successfully for: performance_glitch_user]]>
-    </line>
-    <line>
-      <![CDATA[Test completed]]>
-    </line>
-    <line>
-      <![CDATA[Browser closed successfully]]>
-    </line>
-    <line>
-      <![CDATA[Opening browser]]>
-    </line>
-    <line>
-      <![CDATA[Application launched]]>
-    </line>
-    <line>
-      <![CDATA[Username: error_user]]>
-    </line>
-    <line>
-      <![CDATA[Home Page Title: Swag Labs]]>
-    </line>
-    <line>
-      <![CDATA[Current URL: https://www.saucedemo.com/inventory.html]]>
-    </line>
-    <line>
-      <![CDATA[Home page displayed successfully for: error_user]]>
-    </line>
-    <line>
-      <![CDATA[Test completed]]>
-    </line>
-    <line>
-      <![CDATA[Browser closed successfully]]>
-    </line>
-    <line>
-      <![CDATA[Opening browser]]>
-    </line>
-    <line>
-      <![CDATA[Application launched]]>
-    </line>
-    <line>
-      <![CDATA[Username: visual_user]]>
-    </line>
-    <line>
-      <![CDATA[Home Page Title: Swag Labs]]>
-    </line>
-    <line>
-      <![CDATA[Current URL: https://www.saucedemo.com/inventory.html]]>
-    </line>
-    <line>
-      <![CDATA[Home page displayed successfully for: visual_user]]>
+      <![CDATA[Order Completed page is displayed]]>
     </line>
     <line>
       <![CDATA[Test completed]]>
@@ -155,32 +44,29 @@
       <![CDATA[Close Database connectivity]]>
     </line>
   </reporter-output>
-  <suite started-at="2026-10-11T14:56:18 IST" name="Default suite" finished-at="2026-10-11T14:57:05 IST" duration-ms="47419">
+  <suite started-at="2026-10-12T11:48:10 IST" name="Default suite" finished-at="2026-10-12T11:49:03 IST" duration-ms="52922">
     <groups>
       <group name="functional">
-        <method signature="Login_with_valid_credentials.validLoginTest(java.lang.String,java.lang.String)[pri:0, instance:ecomSwagLabsLogin.Login_with_valid_credentials@5b7a5baa]" name="validLoginTest" class="ecomSwagLabsLogin.Login_with_valid_credentials"/>
+        <method signature="Checkout_Functional.verifyPdfBtn()[pri:0, instance:ecomSwagLabsCheckout.Checkout_Functional@c730b35]" name="verifyPdfBtn" class="ecomSwagLabsCheckout.Checkout_Functional"/>
       </group> <!-- functional -->
-      <group name="integration">
-        <method signature="Login_with_valid_credentials.validLoginTest()[pri:0, instance:ecomSwagLabsLogin.Login_with_valid_credentials@5b7a5baa]" name="validLoginTest" class="ecomSwagLabsLogin.Login_with_valid_credentials"/>
-      </group> <!-- integration -->
     </groups>
-    <test started-at="2026-10-11T14:56:18 IST" name="Default test" finished-at="2026-10-11T14:57:05 IST" duration-ms="47419">
-      <class name="ecomSwagLabsLogin.Login_with_valid_credentials">
-        <test-method is-config="true" signature="bs()[pri:0, instance:ecomSwagLabsLogin.Login_with_valid_credentials@5b7a5baa]" started-at="2026-10-11T14:56:18 IST" name="bs" finished-at="2026-10-11T14:56:18 IST" duration-ms="10" status="PASS">
+    <test started-at="2026-10-12T11:48:10 IST" name="Default test" finished-at="2026-10-12T11:49:03 IST" duration-ms="52922">
+      <class name="ecomSwagLabsCheckout.Checkout_Functional">
+        <test-method is-config="true" signature="bs()[pri:0, instance:ecomSwagLabsCheckout.Checkout_Functional@c730b35]" started-at="2026-10-12T11:48:10 IST" name="bs" finished-at="2026-10-12T11:48:10 IST" duration-ms="29" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Open Database]]>
             </line>
           </reporter-output>
         </test-method> <!-- bs -->
-        <test-method is-config="true" signature="bt()[pri:0, instance:ecomSwagLabsLogin.Login_with_valid_credentials@5b7a5baa]" started-at="2026-10-11T14:56:18 IST" name="bt" finished-at="2026-10-11T14:56:18 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="bt()[pri:0, instance:ecomSwagLabsCheckout.Checkout_Functional@c730b35]" started-at="2026-10-12T11:48:10 IST" name="bt" finished-at="2026-10-12T11:48:10 IST" duration-ms="1" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[PreCondition]]>
             </line>
           </reporter-output>
         </test-method> <!-- bt -->
-        <test-method is-config="true" signature="bm(java.lang.String)[pri:0, instance:ecomSwagLabsLogin.Login_with_valid_credentials@5b7a5baa]" started-at="2026-10-11T14:56:18 IST" name="bm" finished-at="2026-10-11T14:56:24 IST" duration-ms="6394" status="PASS">
+        <test-method is-config="true" signature="bm(java.lang.String)[pri:0, instance:ecomSwagLabsCheckout.Checkout_Functional@c730b35]" started-at="2026-10-12T11:48:10 IST" name="bm" finished-at="2026-10-12T11:48:47 IST" duration-ms="36487" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -197,20 +83,29 @@
             </line>
           </reporter-output>
         </test-method> <!-- bm -->
-        <test-method signature="validLoginTest()[pri:0, instance:ecomSwagLabsLogin.Login_with_valid_credentials@5b7a5baa]" started-at="2026-10-11T14:56:24 IST" name="validLoginTest" finished-at="2026-10-11T14:56:30 IST" duration-ms="6217" status="PASS">
+        <test-method signature="verifyPdfBtn()[pri:0, instance:ecomSwagLabsCheckout.Checkout_Functional@c730b35]" started-at="2026-10-12T11:48:47 IST" name="verifyPdfBtn" finished-at="2026-10-12T11:49:02 IST" duration-ms="15711" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Login successful]]>
             </line>
             <line>
-              <![CDATA[Home Page Title: Swag Labs]]>
+              <![CDATA[Your Cart]]>
             </line>
             <line>
-              <![CDATA[Login successful]]>
+              <![CDATA[Cart page is opened]]>
+            </line>
+            <line>
+              <![CDATA[Checkout: Your Information]]>
+            </line>
+            <line>
+              <![CDATA[Checkout title is displayed]]>
+            </line>
+            <line>
+              <![CDATA[Order Completed page is displayed]]>
             </line>
           </reporter-output>
-        </test-method> <!-- validLoginTest -->
-        <test-method is-config="true" signature="am()[pri:0, instance:ecomSwagLabsLogin.Login_with_valid_credentials@5b7a5baa]" started-at="2026-10-11T14:56:30 IST" name="am" finished-at="2026-10-11T14:56:30 IST" duration-ms="152" status="PASS">
+        </test-method> <!-- verifyPdfBtn -->
+        <test-method is-config="true" signature="am()[pri:0, instance:ecomSwagLabsCheckout.Checkout_Functional@c730b35]" started-at="2026-10-12T11:49:02 IST" name="am" finished-at="2026-10-12T11:49:03 IST" duration-ms="620" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Test completed]]>
@@ -220,296 +115,21 @@
             </line>
           </reporter-output>
         </test-method> <!-- am -->
-        <test-method is-config="true" signature="bm(java.lang.String)[pri:0, instance:ecomSwagLabsLogin.Login_with_valid_credentials@5b7a5baa]" started-at="2026-10-11T14:56:31 IST" name="bm" finished-at="2026-10-11T14:56:34 IST" duration-ms="3288" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Opening browser]]>
-            </line>
-            <line>
-              <![CDATA[Application launched]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- bm -->
-        <test-method signature="validLoginTest(java.lang.String,java.lang.String)[pri:0, instance:ecomSwagLabsLogin.Login_with_valid_credentials@5b7a5baa]" started-at="2026-10-11T14:56:34 IST" name="validLoginTest" data-provider="loginDetailsxlx" finished-at="2026-10-11T14:56:37 IST" duration-ms="2194" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[standard_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secret_sauce]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Username: standard_user]]>
-            </line>
-            <line>
-              <![CDATA[Home Page Title: Swag Labs]]>
-            </line>
-            <line>
-              <![CDATA[Current URL: https://www.saucedemo.com/inventory.html]]>
-            </line>
-            <line>
-              <![CDATA[Home page displayed successfully for: standard_user]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- validLoginTest -->
-        <test-method is-config="true" signature="am()[pri:0, instance:ecomSwagLabsLogin.Login_with_valid_credentials@5b7a5baa]" started-at="2026-10-11T14:56:37 IST" name="am" finished-at="2026-10-11T14:56:37 IST" duration-ms="255" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Test completed]]>
-            </line>
-            <line>
-              <![CDATA[Browser closed successfully]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- am -->
-        <test-method is-config="true" signature="bm(java.lang.String)[pri:0, instance:ecomSwagLabsLogin.Login_with_valid_credentials@5b7a5baa]" started-at="2026-10-11T14:56:37 IST" name="bm" finished-at="2026-10-11T14:56:41 IST" duration-ms="3587" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Opening browser]]>
-            </line>
-            <line>
-              <![CDATA[Application launched]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- bm -->
-        <test-method signature="validLoginTest(java.lang.String,java.lang.String)[pri:0, instance:ecomSwagLabsLogin.Login_with_valid_credentials@5b7a5baa]" started-at="2026-10-11T14:56:41 IST" name="validLoginTest" data-provider="loginDetailsxlx" finished-at="2026-10-11T14:56:43 IST" duration-ms="2216" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[problem_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secret_sauce]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Username: problem_user]]>
-            </line>
-            <line>
-              <![CDATA[Home Page Title: Swag Labs]]>
-            </line>
-            <line>
-              <![CDATA[Current URL: https://www.saucedemo.com/inventory.html]]>
-            </line>
-            <line>
-              <![CDATA[Home page displayed successfully for: problem_user]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- validLoginTest -->
-        <test-method is-config="true" signature="am()[pri:0, instance:ecomSwagLabsLogin.Login_with_valid_credentials@5b7a5baa]" started-at="2026-10-11T14:56:43 IST" name="am" finished-at="2026-10-11T14:56:43 IST" duration-ms="147" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Test completed]]>
-            </line>
-            <line>
-              <![CDATA[Browser closed successfully]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- am -->
-        <test-method is-config="true" signature="bm(java.lang.String)[pri:0, instance:ecomSwagLabsLogin.Login_with_valid_credentials@5b7a5baa]" started-at="2026-10-11T14:56:43 IST" name="bm" finished-at="2026-10-11T14:56:46 IST" duration-ms="3284" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Opening browser]]>
-            </line>
-            <line>
-              <![CDATA[Application launched]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- bm -->
-        <test-method signature="validLoginTest(java.lang.String,java.lang.String)[pri:0, instance:ecomSwagLabsLogin.Login_with_valid_credentials@5b7a5baa]" started-at="2026-10-11T14:56:46 IST" name="validLoginTest" data-provider="loginDetailsxlx" finished-at="2026-10-11T14:56:53 IST" duration-ms="7193" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[performance_glitch_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secret_sauce]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Username: performance_glitch_user]]>
-            </line>
-            <line>
-              <![CDATA[Home Page Title: Swag Labs]]>
-            </line>
-            <line>
-              <![CDATA[Current URL: https://www.saucedemo.com/inventory.html]]>
-            </line>
-            <line>
-              <![CDATA[Home page displayed successfully for: performance_glitch_user]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- validLoginTest -->
-        <test-method is-config="true" signature="am()[pri:0, instance:ecomSwagLabsLogin.Login_with_valid_credentials@5b7a5baa]" started-at="2026-10-11T14:56:53 IST" name="am" finished-at="2026-10-11T14:56:54 IST" duration-ms="150" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Test completed]]>
-            </line>
-            <line>
-              <![CDATA[Browser closed successfully]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- am -->
-        <test-method is-config="true" signature="bm(java.lang.String)[pri:0, instance:ecomSwagLabsLogin.Login_with_valid_credentials@5b7a5baa]" started-at="2026-10-11T14:56:54 IST" name="bm" finished-at="2026-10-11T14:56:57 IST" duration-ms="3382" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Opening browser]]>
-            </line>
-            <line>
-              <![CDATA[Application launched]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- bm -->
-        <test-method signature="validLoginTest(java.lang.String,java.lang.String)[pri:0, instance:ecomSwagLabsLogin.Login_with_valid_credentials@5b7a5baa]" started-at="2026-10-11T14:56:57 IST" name="validLoginTest" data-provider="loginDetailsxlx" finished-at="2026-10-11T14:56:59 IST" duration-ms="2176" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[error_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secret_sauce]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Username: error_user]]>
-            </line>
-            <line>
-              <![CDATA[Home Page Title: Swag Labs]]>
-            </line>
-            <line>
-              <![CDATA[Current URL: https://www.saucedemo.com/inventory.html]]>
-            </line>
-            <line>
-              <![CDATA[Home page displayed successfully for: error_user]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- validLoginTest -->
-        <test-method is-config="true" signature="am()[pri:0, instance:ecomSwagLabsLogin.Login_with_valid_credentials@5b7a5baa]" started-at="2026-10-11T14:56:59 IST" name="am" finished-at="2026-10-11T14:56:59 IST" duration-ms="230" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Test completed]]>
-            </line>
-            <line>
-              <![CDATA[Browser closed successfully]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- am -->
-        <test-method is-config="true" signature="bm(java.lang.String)[pri:0, instance:ecomSwagLabsLogin.Login_with_valid_credentials@5b7a5baa]" started-at="2026-10-11T14:56:59 IST" name="bm" finished-at="2026-10-11T14:57:03 IST" duration-ms="3449" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Opening browser]]>
-            </line>
-            <line>
-              <![CDATA[Application launched]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- bm -->
-        <test-method signature="validLoginTest(java.lang.String,java.lang.String)[pri:0, instance:ecomSwagLabsLogin.Login_with_valid_credentials@5b7a5baa]" started-at="2026-10-11T14:57:03 IST" name="validLoginTest" data-provider="loginDetailsxlx" finished-at="2026-10-11T14:57:05 IST" duration-ms="2215" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[visual_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secret_sauce]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Username: visual_user]]>
-            </line>
-            <line>
-              <![CDATA[Home Page Title: Swag Labs]]>
-            </line>
-            <line>
-              <![CDATA[Current URL: https://www.saucedemo.com/inventory.html]]>
-            </line>
-            <line>
-              <![CDATA[Home page displayed successfully for: visual_user]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- validLoginTest -->
-        <test-method is-config="true" signature="am()[pri:0, instance:ecomSwagLabsLogin.Login_with_valid_credentials@5b7a5baa]" started-at="2026-10-11T14:57:05 IST" name="am" finished-at="2026-10-11T14:57:05 IST" duration-ms="138" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Test completed]]>
-            </line>
-            <line>
-              <![CDATA[Browser closed successfully]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- am -->
-        <test-method is-config="true" signature="at()[pri:0, instance:ecomSwagLabsLogin.Login_with_valid_credentials@5b7a5baa]" started-at="2026-10-11T14:57:05 IST" name="at" finished-at="2026-10-11T14:57:05 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="at()[pri:0, instance:ecomSwagLabsCheckout.Checkout_Functional@c730b35]" started-at="2026-10-12T11:49:03 IST" name="at" finished-at="2026-10-12T11:49:03 IST" duration-ms="1" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[PostCondition]]>
             </line>
           </reporter-output>
         </test-method> <!-- at -->
-        <test-method is-config="true" signature="as()[pri:0, instance:ecomSwagLabsLogin.Login_with_valid_credentials@5b7a5baa]" started-at="2026-10-11T14:57:05 IST" name="as" finished-at="2026-10-11T14:57:05 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="as()[pri:0, instance:ecomSwagLabsCheckout.Checkout_Functional@c730b35]" started-at="2026-10-12T11:49:03 IST" name="as" finished-at="2026-10-12T11:49:03 IST" duration-ms="1" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Close Database connectivity]]>
             </line>
           </reporter-output>
         </test-method> <!-- as -->
-      </class> <!-- ecomSwagLabsLogin.Login_with_valid_credentials -->
+      </class> <!-- ecomSwagLabsCheckout.Checkout_Functional -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
