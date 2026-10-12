@@ -51,7 +51,6 @@ public class CompletePage {
 		Reporter.log("HomePage is displayed",true);
 	}
 
-	```java
 	public void getPdfbtn() throws InterruptedException {
 
 	    // Click the Generate PDF button
